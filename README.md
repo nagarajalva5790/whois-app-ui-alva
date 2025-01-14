@@ -3,6 +3,7 @@
 ### Clone the Repository
 ```sh
 git clone git@github.com:nagarajalva5790/whois-app-ui-alva.git
+cd whois-app-ui-alva
 ```
 
 ### Install Dependencies
@@ -35,3 +36,7 @@ docker run -d -p 3000:3000 nagarajalva5790/whois-app-ui-alva:latest
 ### Access the App
 Visit [https://whois-app-ui-alva.vercel.app/](https://whois-app-ui-alva.vercel.app/) to access the app.
 
+APP SCREENSHOT:
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
