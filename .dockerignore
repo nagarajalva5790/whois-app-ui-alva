@@ -1,0 +1,23 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore the build directory (for Next.js)
+.next/
+
+# Ignore dependency lock files (if you want to avoid them)
+package-lock.json
+yarn.lock
+
+# Ignore Dockerfile itself (if needed)
+Dockerfile
+
+# Ignore .git directory
+.git/
+
+# Ignore any environment variable files
+.env
+.env.local
+.env.*.local
