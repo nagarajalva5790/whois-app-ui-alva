@@ -30,24 +30,12 @@ interface ResultProps {
             message?: string
         };
         source: string;
-    } | null;
+    };
     error: string | null;
-    loading: boolean;
 }
 
-const ResultDisplay: React.FC<ResultProps> = ({ data, error, loading }) => {
-    if (!data) {
-        return (
-            <div className="mt-4 text-center p-4 text-gray-700 bg-gray-100 border border-gray-500 rounded-lg shadow-md">
-              Please enter a domain or IP address to find the detais.
-            </div>
-          );
-    }
-
+const ResultDisplay: React.FC<ResultProps> = ({ data, error }) => {
     const { data: details, source } = data;
-    if (loading) {
-        return <div className="text-center p-4">Loading...</div>;
-    }
 
     if (error || !details.status) {
         return (
